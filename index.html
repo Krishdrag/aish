@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Book of Ms Smart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🎵 Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="book">
+
+  <!-- Cover -->
+  <div class="page active" id="cover">
+    <h1>The Book of Ms Smart</h1>
+    <h3>A short story for Aish ✨</h3>
+    <button onclick="nextPage()">Start Reading →</button>
+  </div>
+
+  <!-- Dedication -->
+  <div class="page">
+    <p class="type">
+      To Aish,<br>
+      The girl with green eyes 💚<br>
+      and a heart full of poetry.<br><br>
+      You don’t know it yet,<br>
+      but you became my favorite chapter.
+    </p>
+    <button onclick="nextPage()">Next →</button>
+  </div>
+
+  <!-- Chapter 1 -->
+  <div class="page">
+    <h2>Chapter 1: How I Found This Story</h2>
+    <p>
+      I wasn’t searching for anything magical,<br>
+      but somehow… I found you.<br><br>
+      And suddenly conversations felt softer,<br>
+      days felt lighter,<br>
+      and I started smiling at my phone.
+    </p>
+    <button onclick="nextPage()">Next →</button>
+  </div>
+
+  <!-- Chapter 2 -->
+  <div class="page">
+    <h2>Chapter 2: Ms Smart</h2>
+    <p>
+      You write poems,<br>
+      but you speak like one too.<br><br>
+      You read stories,<br>
+      but you feel like the best one I’ve ever known.<br><br>
+      And those green eyes of yours?<br>
+      They look like they hide entire libraries inside them.
+    </p>
+    <button onclick="nextPage()">Next →</button>
+  </div>
+
+  <!-- Chapter 3 -->
+  <div class="page">
+    <h2>Chapter 3: A Little Shayari For You</h2>
+    <p>
+      Tum shayari likhti ho,<br>
+      par meri zindagi ka sabse khoobsurat lafz tum khud ho.<br><br>
+      Kitaabein padhti ho tum,<br>
+      par mujhe lagta hai meri kahani tumse shuru hoti hai.
+    </p>
+    <button onclick="nextPage()">Next →</button>
+  </div>
+
+  <!-- Plot Twist -->
+  <div class="page">
+    <h2>Chapter 4: Plot Twist</h2>
+    <p>
+      This entire website…<br>
+      was never just a story.<br><br>
+      It was my way of telling you<br>
+      that I like you — more than just a little.
+    </p>
+    <button onclick="nextPage()">Next →</button>
+  </div>
+
+  <!-- Final -->
+  <div class="page" id="final">
+    <h2>Final Chapter</h2>
+    <h1>Aish,<br>Will you be my Valentine? 💚</h1>
+    <div class="choices">
+      <button onclick="yes()">Yes 💖</button>
+      <button onclick="no()">I need to read that again 😏</button>
+    </div>
+  </div>
+
+  <!-- Success -->
+  <div class="page" id="success">
+    <h1>AAAAAAAA 😭💘</h1>
+    <p>
+      Ms Smart,<br>
+      You love writing stories…<br>
+      I was just hoping I could be part of yours.
+    </p>
+    <p class="small">— Krishna</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
