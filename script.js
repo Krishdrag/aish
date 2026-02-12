@@ -26,6 +26,12 @@ function yes() {
 function no() {
   alert("Take your time... I’ll wait for you, Ms Smart 💚");
 }
+function startStory() {
+  const music = document.getElementById("bg-music");
+  music.volume = 0.3;
+  music.play();
+  nextPage();
+}
 
 function confetti() {
   for (let i = 0; i < 120; i++) {
