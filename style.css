@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5e6d3, #f8f1e7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Book Container */
+#book {
+  width: 75%;
+  max-width: 720px;
+  background: #fffaf4;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+#book:hover {
+  transform: translateY(-5px);
+}
+
+/* Pages */
+.page {
+  display: none;
+  animation: fade 0.8s ease-in-out;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #c94c4c;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #c94c4c, #ff6b6b);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(201, 76, 76, 0.4);
+}
+
+.choices button {
+  margin: 10px;
+}
+
+/* Success text */
+.small {
+  margin-top: 30px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Soft floating glow effect */
+#book::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(201, 76, 76, 0.08);
+  border-radius: 50%;
+  top: -50px;
+  right: -50px;
+  filter: blur(60px);
+}
+
+/* Fade animation */
+@keyframes fade {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
